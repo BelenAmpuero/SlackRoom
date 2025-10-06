@@ -1,0 +1,90 @@
+# Tienda Slack - E-commerce en JavaScript
+
+¡Bienvenido a **Slack Room**, un e-commerce simple desarrollado como proyecto de aprendizaje en JavaScript! Este sitio simula una tienda online de prendas de ropa (remeras, buzos, calzas y pantalones de la marca ficticia "Slack"). Los usuarios pueden navegar productos, seleccionar items, agregar al carrito considerando stock, y ver un resumen final de la compra.
+
+Este proyecto fue creado durante mi curso de JavaScript en CoderHouse, demostrando conceptos como clases, arrays, bucles, validaciones y manipulación del DOM (usando alert y prompt para la interfaz interactiva).
+
+## Descripción
+
+La aplicación permite:
+- Ver productos disponibles con stock actualizado.
+- Seleccionar productos por ID y agregar cantidades al carrito.
+- Validar entradas del usuario (IDs inválidos, stock insuficiente, cantidades no numéricas).
+- Actualizar stock en tiempo real.
+- Acumular totales y mostrar un resumen de compras al finalizar.
+
+Es una implementación vanilla (sin frameworks), enfocada en lógica de negocio y manejo de errores, ideal para practicar fundamentos de programación orientada a objetos en JS.
+
+## Tecnologías utilizadas
+
+- **JavaScript (ES6+)**: Clases, métodos, arrays, bucles (`while`, `forEach`), funciones, validaciones (`isNaN`, `parseInt`).
+- **HTML/CSS básico**: Estructura mínima para ejecutar en navegador (no hay interfaz gráfica avanzada; usa prompts/alerts).
+- **Herramientas**: Browser (para ejecución), Git para control de versiones.
+
+## Características principales
+
+- **Clase `Productos`**: Constructor para id, nombre, precio y stock; método `describir()` para mostrar info.
+- **Array de productos**: Inicializado con 4 prendas de ejemplo.
+- **Interfaz interactiva**: Usa `prompt` para selección y cantidad, `alert` para feedback y resúmenes.
+- **Lógica de carrito**:
+  - Búsqueda de productos por ID (`find`).
+  - Validación de stock y cantidades.
+  - Actualización dinámica del stock.
+  - Array `prendasAcumuladas` para el carrito y variable `total` para acumular precios.
+- **Manejo de salida**: Opción para salir con confirmación (`break` en bucle `while`).
+- **Resumen final**: Muestra items comprados y total si hay compras; alerta de "sin compras" si no.
+
+## Cómo ejecutar el proyecto
+
+1. **Clonar o descargar el repositorio**:
+
+git clone https://github.com/BelenAmpuero/SlackRoom.git
+
+O descarga el ZIP desde GitHub.
+
+2. **Abrir en navegador**:
+- Crea un archivo `index.html` simple si no existe (puedes usar el código JS en un `<script>` tag).
+- Abre `index.html` en un navegador moderno (Chrome, Firefox, etc.).
+- La aplicación se ejecuta automáticamente en la consola del navegador o vía prompts.
+
+3. **Ejemplo de uso**:
+- Se muestra la lista de productos.
+- Ingresa un ID (ej. 123 para Remera) y cantidad.
+- Repite para múltiples compras.
+- Ingresa 5 para salir y ver el resumen.
+
+**Nota**: Como usa `alert` y `prompt`, es una app de consola en browser. No requiere servidor.
+
+## Estructura de archivos
+
+- `index.html`: Archivo principal con el script JS embebido (o separado en `script.js`).
+- `script.js` (opcional): Lógica completa del e-commerce.
+- `README.md`: Este archivo.
+
+## Limitaciones actuales y próximos pasos
+
+- **Limitaciones**: Interfaz básica (prompts/alerts, no UI gráfica). No persiste datos (se resetea al recargar). Sin backend para pagos reales.
+- **Mejoras planeadas** (post-curso de React):
+- Migrar a React para una interfaz moderna (componentes, estado con useState).
+- Agregar persistencia con localStorage o API.
+- Diseño visual responsivo con CSS avanzado.
+- Integración de carrito visual y checkout.
+
+Este proyecto es parte de mi transición de artes visuales a desarrollo web, donde combino creatividad con código funcional.
+
+## Autor
+
+Desarrollado por **Belén Ampuero**, estudiante de Desarrollo Web en CoderHouse.
+
+- **Portfolio**:  BelenAmpuero/BelenAmpuero
+- **Email**: bnampuero@gmail.com
+- **LinkedIn**: www.linkedin.com/in/belén-ampuero-625047308
+- **Otros proyectos**: [Bohemia Studio Tattoo](https://bohemiastudiotattoo.vercel.app/)
+
+¡Gracias por revisar mi proyecto! Estoy abierto a feedback, colaboraciones o sugerencias. Si te gusta, ¡dale una ⭐ en GitHub!
+
+---
+
+*Última actualización: [6 - 10 - 2025]*
+
+
