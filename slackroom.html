@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
+    <title>Salack Room</title>
+    <link rel="stylesheet" href="./style.css">.</head>
 <body>
     
 <header>
@@ -14,29 +14,29 @@
 </header>
 
 <section class="productos">
-    <div class="producto">
+    <div id="1">
         <img src="https://via.placeholder.com/250x300.png?text=Remera+Slack" alt="Remera Slack">
         <h3>Remera Slack Negra</h3>
         <p>$18.000</p>
-        <button onclick="agregarAlCarrito('Remera Slack Negra', 18000)">Agregar al carrito</button>
+        <button class="agregarAlCarrito">Agregar al carrito</button>
     </div>
-    <div class="producto">
+    <div id="2">
         <img src="https://via.placeholder.com/250x300.png?text=Buzo+Slack" alt="Buzo Slack">
         <h3>Buzo Hoodie Slack</h3>
         <p>$80.000</p>
-        <button onclick="agregarAlCarrito('Buzo Hoodie Slack', 80000)">Agregar al carrito</button>
+        <button class="agregarAlCarrito">Agregar al carrito</button>
     </div>
-    <div class="producto">
+    <div id="3">
         <img src="https://via.placeholder.com/250x300.png?text=Jogger+Slack" alt="Jogger Slack">
         <h3>Jogger Slack Gris</h3>
         <p>$80.000</p>
-        <button onclick="agregarAlCarrito('Jogger Slack Gris', 80000)">Agregar al carrito</button>
+        <button class="agregarAlCarrito">Agregar al carrito</button>
     </div>
-    <div class="producto">
+    <div id="4">
         <img src="https://via.placeholder.com/250x300.png?text=Jogger+Slack" alt="Jogger Slack">
         <h3>Calza Slack</h3>
         <p>$50.000</p>
-        <button onclick="agregarAlCarrito('Calza Slack', 50000)">Agregar al carrito</button>
+        <button class="agregarAlCarrito">Agregar al carrito</button>
     </div>
 </section>
 
@@ -44,6 +44,12 @@
     <h2>🛒 Carrito de Compras</h2>
     <ul id="lista-carrito"></ul>
     <p id="total">Total: $0</p>
+    <button id="finalizarCompra">Finalizar Compra</button>
+</section>
+
+<section class="historial">
+  <h2> Historial de Compras</h2>
+  <ul id="lista-historial"></ul>
 </section>
 
 <footer>
