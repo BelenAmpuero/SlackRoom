@@ -55,6 +55,7 @@ O descarga el ZIP desde GitHub.
 
 **Nota**: Como usa `alert` y `prompt`, es una app de consola en browser. No requiere servidor.
 
+
 ## Estructura de archivos
 
 - `index.html`: Archivo principal con el script JS embebido (o separado en `script.js`).

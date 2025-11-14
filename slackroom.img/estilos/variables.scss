@@ -1,0 +1,60 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap');
+$fuentePrincipal: Exo;
+
+@import url('https://fonts.googleapis.com/css2?family=Jura:wght@300..700&display=swap');
+
+$fuenteSecundaria: Jura;
+
+$colorPrimario: rgb(233, 198, 71);
+
+$colorSecundario: rgb(45, 42, 42); 
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: $colorSecundario;
+}
+
+h2{
+    font-family: $fuentePrincipal;
+}
+
+.bottom{
+    box-sizing: border-box;
+    background-color: rgba(163, 128, 12, 0.827);
+    height: auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form{
+        background-color: #f7f7f7; 
+    color: #333;                 
+    padding: 2rem;
+    border-radius: 1rem;
+    width: 90%;
+    max-width: 600px;
+    margin: 2rem auto;           
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  gap: 1.5rem;    
+}
+
+@mixin mobile{
+    @media (max-width: 430px){
+    @content;
+    }
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}

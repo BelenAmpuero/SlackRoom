@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salack Room</title>
+    <link rel="stylesheet" href="./estilos/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
+<body>
+    
+    <header class="header-main">
+  <div class="header-content">
+
+    <div class="logo">SlackVibe</div>
+
+    <nav class="nav">
+      <ul class="nav-list">
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#productos">Productos</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+
+    <div class="hamburger">
+      <span></span><span></span><span></span>
+    </div>
+
+  </div>
+</header>
+
+    <section class="presentacion" id="inicio">
+        <img src="./imgencabezado/hightLine.png" alt="Imagen hight line" title="Slack line">
+        <div class="textoSuperpuesto">
+    <h2><strong>TU CUERPO SE MUEVE</strong></h2>
+    <h3><strong>SLACKROOM LO PROTEGE Y ACOMPAÑA</strong></h3>
+    <p>Resistencia en cada costura, flexibilidad en cada movimiento</p>
+    </div>
+</section>
+
+<div class="swiper-container-limit" id="productos">
+  <div class="swiper mySwiper">
+      <div class="swiper-wrapper" id="contenedor-productos"></div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-pagination"></div>
+  </div>
+</div>
+
+<section class="carrito" id="carrito">
+    <h2>🛒 Carrito de Compras</h2>
+    <ul id="lista-carrito"></ul>
+    <p id="total">Total: $0</p>
+    <button id="finalizarCompra">Finalizar Compra</button>
+</section>
+
+<section class="historial">
+  <h2> Historial de Compras</h2>
+  <ul id="lista-historial"></ul>
+</section>
+
+<footer>
+    <div id="contacto">
+    <div class="uno">
+    <p><strong>📍 Dirección: Av. Siempre Viva 123, Buenos Aires</strong></p>
+    <p><strong>📞 WhatsApp: <a href="https://wa.me/5491123456789" target="_blank">+54 9 11 2345-6789</a></strong></p>
+    <p><strong>📸 Instagram: <a href="https://instagram.com/slackropa" target="_blank">@slackropa</a></strong></p>
+    <p>&copy; 2025 Slack Ropa - Todos los derechos reservados</p>
+    </div>
+    <div class="dos">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d108948.36183285866!2d-64.33919420273435!3d-31.424144999999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9432a28f63cf2077%3A0xca71e10e4641086b!2sPaseo%20del%20Buen%20Pastor!5e0!3m2!1ses-419!2sar!4v1762813794881!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+</div>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="slackroom.js"></script>
+</body>
+</html>
