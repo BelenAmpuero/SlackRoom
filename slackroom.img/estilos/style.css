@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Protest+Revolution&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Jura:wght@300..700&display=swap");
 * {
   margin: 0;
@@ -11,7 +11,7 @@ body {
 }
 
 h2 {
-  font-family: Exo;
+  font-family: "Protest Revolution";
 }
 
 .bottom {
@@ -52,6 +52,7 @@ h2 {
   background-color: #e9c647;
   transition: background-color 0.3s ease;
   padding: 1rem 2rem;
+  font-family: "Jura";
 }
 .header-main.scrolled {
   background-color: rgba(233, 198, 71, 0.5);
@@ -71,19 +72,12 @@ h2 {
   color: white;
   text-decoration: none;
   font-weight: 600;
+  font-family: "Jura";
 }
 .header-main .nav-list li a:hover {
   opacity: 0.7;
 }
-.header-main .hamburger {
-  width: 30px;
-  height: 22px;
-  display: none;
-  flex-direction: column;
-  justify-content: space-between;
-  cursor: pointer;
-}
-.header-main .hamburger span {
+.header-main span {
   display: block;
   height: 3px;
   background: white;
@@ -108,25 +102,43 @@ h2 {
   width: 100%;
   height: auto;
 }
-.presentacion .textoSuperpuesto {
-  font-family: Exo;
-  display: flex;
-  flex-direction: column;
-  position: absolute;
-  top: 15%;
-  left: 50%;
-  transform: translate(-80%, -20%);
-  color: white;
-  font-size: 2rem;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-  text-align: center;
-  gap: 4rem;
-}
 .presentacion::before {
   content: "";
   position: absolute;
   inset: 0;
   background: rgba(0, 0, 0, 0.519);
+  z-index: 1;
+}
+.presentacion .textoSuperpuesto {
+  font-family: "Protest Revolution";
+  text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.677);
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  transform: translate(-80%, -20%);
+  color: white;
+  font-size: 3vw;
+  text-align: center;
+  gap: 4vw;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+@media (max-width: 430px) {
+  .presentacion .textoSuperpuesto {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -45%);
+    font-size: 1.1rem;
+    gap: 1rem;
+    width: 80%;
+    line-height: 1.3;
+    text-align: center;
+    padding: 0.8rem 0;
+  }
 }
 
 .swiper-container-limit {
@@ -179,11 +191,13 @@ h2 {
   transform: scale(1.2);
 }
 .producto h3 {
+  font-family: "Jura";
   font-size: 1.2rem;
 }
 .producto p {
   font-weight: bold;
   margin-bottom: 0.5rem;
+  font-family: "Jura";
 }
 .producto .btn-carrito {
   width: 100%;
@@ -201,7 +215,11 @@ h2 {
   transform: scale(1.1);
 }
 
+.carrito, .historial {
+  font-family: "Jura";
+}
 .carrito h2, .historial h2 {
+  font-family: "Jura";
   font-size: 2rem;
   color: #222;
   text-align: center;
@@ -230,6 +248,7 @@ h2 {
   align-self: flex-end;
 }
 .carrito button#finalizarCompra, .historial button#finalizarCompra {
+  font-family: "Jura";
   background-color: #4caf50;
   color: white;
   border: none;
@@ -246,12 +265,41 @@ h2 {
   transform: scale(0.98);
 }
 
+.btn-danger {
+  background-color: #d33;
+  color: white;
+  font-family: "Jura";
+  padding: 0.6rem 1.2rem;
+  border-radius: 0.5rem;
+  border: none;
+  margin: 0.5rem;
+  cursor: pointer;
+}
+.btn-danger:hover {
+  background-color: rgb(211.2857142857, 35.2142857143, 35.2142857143);
+}
+
+.btn-success {
+  background-color: #3085d6;
+  color: white;
+  font-family: "Jura";
+  padding: 0.6rem 1.2rem;
+  border-radius: 0.5rem;
+  border: none;
+  margin: 0.5rem;
+  cursor: pointer;
+}
+.btn-success:hover {
+  background-color: rgb(39.0987903226, 120.1572580645, 197.4012096774);
+}
+
 footer {
   background-color: rgb(233, 198, 71);
   padding: 1rem;
 }
 
 #contacto {
+  font-family: "Jura";
   margin: 0.5rem;
   display: flex;
   justify-content: space-between;
@@ -299,12 +347,15 @@ footer {
   #contacto {
     flex-direction: column;
     align-items: stretch;
-    gap: 1rem;
+    gap: 0.5rem;
   }
   #contacto .uno {
     order: 1;
     max-width: 100%;
     flex: none;
+    font-size: 1.1rem;
+    margin: 1rem 0rem 0rem 1rem;
+    align-items: center;
   }
   #contacto .dos {
     order: 2;

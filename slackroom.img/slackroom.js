@@ -167,8 +167,8 @@ function eliminarDelHistorial(id) {
   if (index !== -1) {
     const swalWithBootstrapButtons = Swal.mixin({
       customClass: {
-        confirmButton: "btn btn-success",
-        cancelButton: "btn btn-danger"
+        confirmButton: "btn-success",
+        cancelButton: "btn-danger"
       },
       buttonsStyling: false
     });
@@ -225,6 +225,7 @@ function mostrarCarrito() {
 
   calcularTotal();
 }
+
 
 mostrarCarrito();
 mostrarHistorial();
